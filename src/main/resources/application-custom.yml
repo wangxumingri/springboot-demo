@@ -1,9 +1,17 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/demo1?useUnicode=true&characterEncoding=utf8&useSSL=true
-    username: root
-    password: admin13579
-    driver-class-name: com.mysql.jdbc.Driver
+    # 配置数据源ds1:使用ds1数据库
+    ds1:
+      url: jdbc:mysql://localhost:3306/demo1?useUnicode=true&characterEncoding=utf8&useSSL=true
+      username: root
+      password: admin13579
+      driver-class-name: com.mysql.jdbc.Driver
+     # 配置数据源ds2:使用demo2数据库
+    ds2:
+      url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=utf8&useSSL=true
+      username: root
+      password: admin13579
+      driver-class-name: com.mysql.jdbc.Driver
 server:
   port: 10000
 

@@ -28,6 +28,7 @@ public class HospitalOrmServiceImpl implements HospitalOrmService {
 
 
     @Autowired
+    @Qualifier("ds2JdbcTemplate")
     private JdbcTemplate jdbcTemplate;
 
     @Override
